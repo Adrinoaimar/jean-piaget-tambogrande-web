@@ -86,3 +86,21 @@
 @media (max-width: 600px) {
   .tb-brand .brand__mark { height: 44px; }
 }
+
+/* Segunda luz ambiental detrás del contenido. */
+.tb-hero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; width: 26rem; height: 26rem; left: -15rem; bottom: -14rem; border: 45px solid rgba(248,184,21,.12); border-radius: 50%; }
+@media (max-width: 600px) {
+  .tb-hero { padding-top: 1.7rem; }
+  .tb-hero h1 { font-size: clamp(2.25rem, 10vw, 3.6rem); line-height: 1.1; text-wrap: balance; }
+  .tb-hero__copy p { font-size: .95rem; line-height: 1.7; margin-block: 1.1rem; }
+  .tb-button { width: 100%; justify-content: center; padding-inline: .8rem; font-size: .82rem; }
+  .tb-hero__portrait img { height: clamp(16rem, 76vw, 25rem); }
+  .tb-stage { border-radius: 20px; padding: .75rem .75rem 0; }
+  .tb-stage--tall, .tb-stage--portrait { padding-top: 1.25rem; }
+  .tb-stage--tall img, .tb-stage--portrait img { height: clamp(19rem, 90vw, 26rem); }
+  .tb-heading { margin-bottom: 1.75rem; }
+  .tb-feature__copy, .tb-scene__copy { padding-left: 2.2rem; }
+  .tb-gallery.gallery { gap: 1.5rem; }
+  .tb-gallery__item .photo-open { border-radius: 18px; }
+  .tb-footer nav { gap: .2rem; }
+}
