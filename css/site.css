@@ -46,8 +46,8 @@
 .tb-learning .tb-stage--tall img { height:32rem; }
 .tb-learning .tb-scene .tb-stage img { height:19rem; }
 .tb-motto { background:#0a332b;color:#f8f7f4;text-align:center; }
-.tb-motto img { margin:0 auto 1rem;object-fit:contain; }
-.tb-motto p { color:#ebebdf;font-size:.85rem; }
+.tb-motto img { display:block;margin:0 auto 1rem;object-fit:contain; }
+.tb-motto p { width:max-content;max-width:100%;margin:0 auto;text-align:center;color:#ebebdf;font-size:.85rem; }
 .tb-motto h2 { font-family:'Source Serif 4',Georgia,serif;color:#f8f7f4;font-size:clamp(2rem,4.5vw,4rem);margin:1rem 0; }
 .tb-motto span { display:block;color:#f8b815;letter-spacing:.12em;font-size:clamp(1rem,2vw,1.4rem);font-weight:700; }
 .tb-next { background:var(--surface-sunken); }
