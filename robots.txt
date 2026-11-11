@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://adrinoaimar.github.io/jean-piaget-tambogrande-web/sitemap.xml

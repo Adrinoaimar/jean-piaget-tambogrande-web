@@ -138,6 +138,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    document.documentElement.classList.add("js");
     initNav();
     initDesign();
     initReveal();
@@ -158,20 +159,26 @@
     document.addEventListener('visibilitychange', function () {
       document.documentElement.classList.toggle('ambient-hidden', document.hidden);
     });
-    var footer = document.querySelector('.site-footer');
-    if (!footer || reduceMotion) return;
-    var button = document.createElement('button');
-    button.type = 'button';
-    button.className = 'motion-toggle';
-    button.textContent = 'Pausar fondo';
-    button.setAttribute('aria-pressed', 'false');
-    button.addEventListener('click', function () {
-      var paused = document.documentElement.classList.toggle('motion-paused');
-      button.setAttribute('aria-pressed', String(paused));
-      button.textContent = paused ? 'Activar fondo' : 'Pausar fondo';
-    });
-    var container = footer.querySelector('.shell') || footer;
-    container.appendChild(button);
+
   }
   initAmbientControl();
+})();
+
+(function(){
+ "use strict";
+ document.querySelectorAll('[data-inquiry]').forEach(function(form){
+  var select=form.querySelector('[name="nivel"]');
+  if(select){var value=new URLSearchParams(location.search).get('nivel');if(['inicial','primaria','secundaria'].includes(value))select.value=value;}
+  form.addEventListener('submit',function(event){
+   event.preventDefault();if(!form.reportValidity())return;
+   var data=new FormData(form);var admission=form.dataset.inquiry==='admision';
+   var lines=['Hola, quisiera '+(admission?'información de Admisión 2027':'hacer una consulta')+' de Jean Piaget Tambogrande.','Nombre: '+data.get('nombre'),'Teléfono: '+data.get('telefono')];
+   if(data.get('nivel'))lines.push('Nivel: '+select.selectedOptions[0].textContent);
+   lines.push('Consulta: '+data.get('mensaje'));
+   var url='https://wa.me/51959287205?text='+encodeURIComponent(lines.join('\n'));
+   window.open(url,'_blank','noopener,noreferrer');
+   var status=form.querySelector('.tb-form-status');status.textContent='Revisa el mensaje en WhatsApp y pulsa Enviar para completar tu consulta. Si no se abre, ';
+   var link=document.createElement('a');link.href=url;link.target='_blank';link.rel='noopener noreferrer';link.textContent='abre WhatsApp desde aquí';status.append(link);
+  });
+ });
 })();
