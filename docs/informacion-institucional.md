@@ -12,7 +12,7 @@ Fuente visual revisada: `volante-A4-doble-cara-dos-fotos-meritos.pdf`, en la car
 - Lema: Dios, labor y lealtad.
 - Jornada completa, docentes con nivel universitario, preparación para postulantes UNP y academia gratuita de Matemática/Comunicación para estudiantes de Secundaria.
 - Dos patios, aulas con pantallas, laboratorios de Biología/Química/Física, salas de innovación, Psicología/consejería familiar y psicomotricidad en Inicial/juegos para Primaria.
-- Méritos históricos 2023–2026: presentados como trayectoria institucional, conservando el año correspondiente. No se presentan como un resultado garantizado a nuevas familias.
+- El volante compartido menciona méritos históricos 2023–2026 sin distinguir siempre la sede; no se atribuyen esos resultados exclusivamente a Tambogrande en la web. Se describe la preparación académica sin prometer resultados.
 
 No se inventan horarios de atención, requisitos, costos, antigüedad ni cifras de vacantes. El enlace a Maps busca el texto de la dirección; no se atribuye un punto GPS verificado.
 

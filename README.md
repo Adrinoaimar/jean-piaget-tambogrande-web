@@ -7,7 +7,7 @@ Sitio estático, sin compilación. GitHub Pages publica `main` desde la raíz. T
 ## Páginas
 
 - `index.html`: portada, propuesta educativa, niveles, escenas de aprendizaje y admisión.
-- `nosotros.html`: propuesta, instalaciones y trayectoria institucional 2023–2026.
+- `nosotros.html`: propuesta, instalaciones, acompañamiento y preparación académica.
 - `niveles.html`: Inicial, Primaria y Secundaria.
 - `vida-escolar.html`: aprendizaje y convivencia.
 - `galeria.html`: ocho escenas con visor accesible y encuadres completos.
