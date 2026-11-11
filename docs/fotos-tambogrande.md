@@ -62,3 +62,7 @@ La integración anterior empleaba el PNG adjunto en cabecera y favicon. La separ
 El sitio conserva los dieciséis WebP actuales, las fuentes, los estilos y las interacciones en carpetas locales. La galería no depende del sitio de Sullana. El único vínculo externo hacia Sullana aparece identificado expresamente en el pie. Se retira del JavaScript la configuración y la lógica de formularios de Sullana: Tambogrande no publica datos de contacto sin confirmar.
 
 El archivo `img/escudo-tambogrande.png` es la versión con fondo transparente obtenida mediante `image_gen` integrado. La edición solicita retirar el fondo y conservar el escudo proporcionado, sin redibujar su diseño. Se usa el archivo entregado de 256 × 310 px, sin nuevas modificaciones, en cabecera y favicon.
+
+## Ampliación institucional — 2026-11-11
+
+La web se amplía a páginas de Inicio, Nosotros, Niveles, Vida escolar, Galería, Admisión y Contacto, más privacidad y 404. Los ocho motivos se mantienen sin nuevas ediciones; se reutilizan entre páginas cuando ayudan al contexto. La galería contiene una aparición de cada motivo, con retratos emparejados y escenas anchas en filas completas. El índice anterior de ubicaciones documenta el sitio inicial, no limita la distribución multipágina actual. Se conserva alfa y no se añaden nombres, grados ni fechas a las escenas basándose solo en las imágenes.
